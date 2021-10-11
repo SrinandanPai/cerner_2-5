@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # cerner_2tothe5th_2021
+#
 # Script to manage the task list
 
 task=~/.task
