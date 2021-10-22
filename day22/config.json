@@ -1,0 +1,10 @@
+{
+    "url": "<github-url>",
+    "token": "<github-token>",
+    "owner": "<github-org>",
+    "repo": "<github-repo>",
+    "path": "<github-path-to-upload-dashboard>",
+    "nr_api_key": "<nr-api-key>",
+    "issue_number": "<github-issue-number>",
+    "nr_guid": "<nr-dashboard-guid>"
+}
