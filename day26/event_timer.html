@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <!-- cerner_2tothe5th_2021 -->
+    <!-- Timer for Cerner 2^5 2021 Event-->
+    <head>
+        <title>Cerner 2^5 2021 Timer</title>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 60px;">Cerner 2^5 2021 Timer</h1>
+        <p id="timer" style="text-align: center; font-size: 60px;"></p>
+        
+        <script>
+            var countDownDate = new Date("Nov 2, 2021 00:00:00").getTime();
+            var clock = setInterval(function() {
+                var distance = countDownDate - new Date().getTime();
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+                if (distance < 0) {
+                    clearInterval(clock);
+                    document.getElementById("timer").innerHTML = "Times Up!!!";
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>
